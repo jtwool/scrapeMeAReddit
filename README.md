@@ -2,8 +2,11 @@
 *A simple command line Reddit scraping tool.*
 ### JT Wolohan
 *Center for Computer Mediated Communication*
+
 *Dept. Information and Library Science*
+
 *Indiana University*
+
 *jwolohan@indiana.edu*
 
 ### Introduction
