@@ -1,10 +1,8 @@
 # scrapeMeAReddit v.1.0
-### A simple command line Reddit scraping tool.
-## JT Wolohan
-### Dept. Information and Library Science, Indiana University
-### jwolohan@indiana.edu
-### (c) 2018 - GNU LGPL3.0
-
+*A simple command line Reddit scraping tool.*
+### JT Wolohan
+*Dept. Information and Library Science, Indiana University*
+*jwolohan@indiana.edu*
 
 ### Introduction
 scrapeMeAReddit is a simple command line tool for fetching Reddit posts. The tool offers users the ability to quickly download posts from specified subreddits or users. The software is written in Python3 and requires Python3 to run. Please take care to abide by Reddit's API access rules while using this software: https://github.com/reddit-archive/reddit/wiki/API 
@@ -19,6 +17,7 @@ Subreddit downloads all posts from between to points in time from subreddits spe
 `python3 scrapeMeAReddit.py -c your_credentials.json --subs your_subreddits.txt`
 
 Be default, the tool will scrape data from the past 7 days, but this can be changed by using `--start` or `-s` and `--end` or `-e`, e.g., we could scrape all the posts from the year 2015 with:
+
 `python3 scrapeMeAReddit.py -c your_credentials.json --subs your_subreddits.txt -s 01/01/2015 -e 12/31/2015`
 
 Note that the dates must be in MM/DD/YYYY format.
@@ -33,3 +32,6 @@ User mode, similar to subreddit mdoe, is invoked as follows:
 Again, your file containing the users whose posts you would like to download should contain one user per file, without u/ or /u/ prepended, e.g., Throwaway27
 
 User mode fetches a users 1000 most-recent posts.
+
+*(c) 2018 - GNU LGPL3.0*
+
