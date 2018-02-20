@@ -1,10 +1,8 @@
 # scrapeMeAReddit v.1.0
 *A simple command line Reddit scraping tool.*
 ### JT Wolohan
-**Center for Computer Mediated Communication**\\
-**Dept. Information and Library Science**\\
-**Indiana University**\\
-**jwolohan@indiana.edu**\\
+**Dept. Information and Library Science, Indiana University**
+**jwolohan@indiana.edu**
 
 ### Introduction
 scrapeMeAReddit is a simple command line tool for fetching Reddit posts. The tool offers users the ability to quickly download posts from specified subreddits or users. The software is written in Python3 and requires Python3 to run. Please take care to abide by Reddit's API access rules while using this software: https://github.com/reddit-archive/reddit/wiki/API 
