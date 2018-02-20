@@ -1,7 +1,9 @@
 # scrapeMeAReddit v.1.0
 *A simple command line Reddit scraping tool.*
 ### JT Wolohan
-*Dept. Information and Library Science, Indiana University*
+*Center for Computer Mediated Communication*
+*Dept. Information and Library Science*
+*Indiana University*
 *jwolohan@indiana.edu*
 
 ### Introduction
