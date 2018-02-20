@@ -124,7 +124,7 @@ def getPosts(headers,subreddit,start,end,wp,creds):
   while end_time > end-1:
     afters = []
     after = None
-    end_time = start_time-(8000*2)
+    end_time = start_time-(20000)
     more_posts = True
     while more_posts:
       url = genSubPath(subreddit,start_time,end_time)

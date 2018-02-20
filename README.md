@@ -20,9 +20,9 @@ Subreddit downloads all posts from between to points in time from subreddits spe
 
 Be default, the tool will scrape data from the past 7 days, but this can be changed by using `--start` or `-s` and `--end` or `-e`, e.g., we could scrape all the posts from the year 2015 with:
 
-`python3 scrapeMeAReddit.py -c your_credentials.json --subs your_subreddits.txt -s 01/01/2015 -e 12/31/2015`
+`python3 scrapeMeAReddit.py -c your_credentials.json --subs your_subreddits.txt -s 12/31/2015 -e 01/01/2015`
 
-Note that the dates must be in MM/DD/YYYY format.
+Note that the dates must be in MM/DD/YYYY format and the scrapeMeAReddit scrapes *backwards* in time. Your end date should be before your start date.
 
 Your file containing subreddits should be a plaintext file with one subreddit per line without r/ or /r/ prepended, e.g., AskReddit
 
