@@ -1,3 +1,9 @@
+# scrapeMeAReddit v1.0
+# JT Wolohan
+# jwolohan@indiana.edu
+# Dept. Information and Library Science, Indiana University
+# Center for Computer Mediated Communication
+# (c) 2018 - GNU LESSER GENERAL PUBLIC LICENSE
 import requests, requests.auth
 import json, re, functools, os
 from datetime import datetime,timezone,timedelta
