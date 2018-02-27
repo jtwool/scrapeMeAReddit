@@ -12,13 +12,11 @@ To get set up with Reddit-approved application credentials (required to use this
 
 ### Installation
 1. Clone this repository
-
-  `git clone https://github.com/jtwool/scrapeMeAReddit`
+  > `git clone https://github.com/jtwool/scrapeMeAReddit`
 2. Create your credentials file (e.g., my_creds.json)
 3. Create your target file (e.g., my_subs.txt)
 4. Run the script with Python3
-
-  `python3 scrapeMeAReddit -c my_creds.json --subs my_subs.txt`
+  > `python3 scrapeMeAReddit -c my_creds.json --subs my_subs.txt`
 5. $$$
 
 ### Using the tool
