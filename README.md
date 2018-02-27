@@ -26,11 +26,11 @@ The software is run on the command line. To use the tool, first update the demo\
 
 Subreddit downloads all posts from between to points in time from subreddits specified in an input file. The posts are saved as JSON files.
 
-`python3 scrapeMeAReddit.py -c your_credentials.json --subs your_subreddits.txt`
+    python3 scrapeMeAReddit.py -c your_credentials.json --subs your_subreddits.txt
 
 Be default, the tool will scrape data from the past 7 days, but this can be changed by using `--start` or `-s` and `--end` or `-e`, e.g., we could scrape all the posts from the year 2015 with:
 
-`python3 scrapeMeAReddit.py -c your_credentials.json --subs your_subreddits.txt -s 12/31/2015 -e 01/01/2015`
+    python3 scrapeMeAReddit.py -c your_credentials.json --subs your_subreddits.txt -s 12/31/2015 -e 01/01/2015
 
 Note that the dates must be in MM/DD/YYYY format and the scrapeMeAReddit scrapes *backwards* in time. Your end date should be before your start date.
 
@@ -46,7 +46,7 @@ Your file containing subreddits should be a plaintext file with one subreddit pe
 
 User mode, similar to subreddit mdoe, is invoked as follows:
 
-`python3 scrapeMeAReddit.py -c your_credentials.json --users your_users.txt`
+    python3 scrapeMeAReddit.py -c your_credentials.json --users your_users.txt
 
 Again, your file containing the users whose posts you would like to download should contain one user per file, without u/ or /u/ prepended, e.g.:
 
