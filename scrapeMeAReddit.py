@@ -5,9 +5,14 @@
 # Center for Computer Mediated Communication
 # (c) 2018 - GNU LESSER GENERAL PUBLIC LICENSE
 import requests, requests.auth
+from requests import get
 import json, re, functools, os
 from datetime import datetime,timezone,timedelta
 from time import sleep
+
+def getReddit(url,params=None,**kwargs):
+  sleep(1.05)
+  return get(url,params=None,**kwargs)
 
 def time2POSIX(timestr):
   mytime = datetime.strptime(timestr,"%m/%d/%Y").replace(tzinfo=timezone.utc)
@@ -63,12 +68,12 @@ def get_user_text(headers,user):
   try:
     #Get account created date and karma
     abturl = genUserPath(user,info=True)
-    x = requests.get(abturl,headers=headers)
+    x = getReddit(abturl,headers=headers)
     check_ratelimit(x)
     j = _safeJSONloads(x.text)
     r = []
     url = genUserPath(user)
-    x = requests.get(url,headers=headers)
+    x = getReddit(url,headers=headers)
     if check_ratelimit(x): 
       headers = myAuthenticate()
     j = _safeJSONloads(x.text)
@@ -78,7 +83,7 @@ def get_user_text(headers,user):
     r = r + [child for child in children]
     while AFTER not in [None,'']:
       url = genUserPath(user,after=AFTER)
-      x = requests.get(url,headers=headers)
+      x = getReddit(url,headers=headers)
       rs += 1
       if check_ratelimit(x): 
         headers = myAuthenticate()
@@ -114,7 +119,7 @@ def genSubPath(sub,start,stop):
 
 def requestComments(permalink,headers):
   url = "http://oauth.reddit.com/"+permalink
-  x = requests.get(url,headers=headers)
+  x = getReddit(url,headers=headers)
   return json.loads(x.text)
 
 def getPosts(headers,subreddit,start,end,wp,creds):
@@ -129,7 +134,7 @@ def getPosts(headers,subreddit,start,end,wp,creds):
     while more_posts:
       url = genSubPath(subreddit,start_time,end_time)
       if after: url = url+"&after="+after
-      x = requests.get(url,headers=headers)
+      x = getReddit(url,headers=headers)
       if check_ratelimit(x):
         headers = myAuthenticate()
       j = json.loads(x.text)
