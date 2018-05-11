@@ -5,6 +5,11 @@
 
 **jwolohan@indiana.edu**
 
+## NOTE: NO LONGER BEING MAINTAINED
+Due to reddit's API changes, the subreddit mode scraping feature of this script is no longer functioning. I currently have no plans to update this script. I will, however, leave it here as a resource or for those who wish to use the user scraping functionality. 
+
+------------------------------
+
 ### Introduction
 scrapeMeAReddit is a simple command line tool for fetching Reddit posts. The tool offers users the ability to quickly download posts from specified subreddits or users. The software is written in Python3 and requires Python3 to run. Please take care to abide by Reddit's API access rules while using this software: https://github.com/reddit-archive/reddit/wiki/API
 
